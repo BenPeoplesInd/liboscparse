@@ -3,3 +3,10 @@ Liblo (OSC library) without GNU/Autocrap and network dependent non-portable code
 Based on liblo 0.26
 Builds by default for lm32-rtems4.11
 
+===
+
+BPI adds: 
+
+Original fork from https://github.com/radarsat1/liblo -- brought that license in here.
+
+This fork will include our modifications to make it work on 32-bit microcontrollers and whatnot, under the terms of the LGPL.
