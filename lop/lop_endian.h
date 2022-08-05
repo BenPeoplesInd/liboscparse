@@ -17,13 +17,16 @@
 #ifndef LOP_ENDIAN_H
 #define LOP_ENDIAN_H
 
-#include <rtems/endian.h>
+// #include <endian.h>
 #include <sys/types.h>
 #include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+// #define htons(x) x
+#define htnol(x) __builtin_bswap16(x)
 
 #define lop_swap16(x) htons(x)
 
